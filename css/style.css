@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+
+body {
+  background: #55ACEE;
+  color: #fff;
+  border: 10px solid #fff;
+  height: 100vh;
+}
+
+body main {
+  height: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+body main header {
+  line-height: 214px;
+  font-size: 3em;
+  -ms-flex: 1;
+      flex: 1;
+}
+
+body main .quote-box {
+  font-size: 1.5em;
+  -ms-flex: 1;
+      flex: 1;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+body main .quote-box .quote {
+  padding-top: 30px;
+  -ms-flex: 1;
+      flex: 1;
+}
+
+body main .quote-box .author {
+  -ms-flex: 2;
+      flex: 2;
+}
+
+body main .button-box {
+  -ms-flex: 1;
+      flex: 1;
+}
+
+body main .button-box .trigger {
+  margin-top: 50px;
+  display: block;
+  height: 35px;
+  width: 400px;
+  font-size: 1em;
+  border: 1px solid #fff;
+  cursor: pointer;
+  background: #55ACEE;
+  color: #fff;
+}
+
+body main .button-box .trigger:hover {
+  background: #fff;
+  color: #55ACEE;
+  transition: .8s;
+}
+
+body main .button-box .tweet {
+  display: inline-block;
+  width: 400px;
+  height: 35px;
+  line-height: 35px;
+  border: 1px solid #fff;
+  margin-top: 40px;
+  text-decoration: none;
+  color: #fff;
+}
+
+body main .button-box .tweet:hover {
+  background: #fff;
+  color: #55ACEE;
+  transition: .8s;
+}
+/*# sourceMappingURL=style.css.map */

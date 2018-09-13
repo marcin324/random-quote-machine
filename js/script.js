@@ -2,9 +2,9 @@
 'use strict';
 
 /* Zmienna z linkiem do wysyłania tweetów na Twittera (treść jest 'doklejana' po znaku równości) */
-var tweetLink = 'https://twitter.com/intent/tweet?text=';
-/* Link do API Quotes on Design, pozwalający pobiarać losowe cytaty */
-var quoteUrl = 'https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1';
+var tweetLink = "https://twitter.com/intent/tweet?text=";
+/* Link do API Quotes on Design, pozwalający pobierać losowe cytaty */
+var quoteUrl = "https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1";
 
 /* Logika pozwalająca na pobranie losowego cytatu za pomocą Fetch API */
 function getQuote() {
@@ -31,14 +31,13 @@ function createTweet(input) {
 
 	var tweetText = "Quote of the day - " + quoteText + " Author: " + quoteAuthor;
 
-	if(tweetText.length > 140){
-		getQuote();
-	}
-	else {
-		var tweet = tweetLink + encodeURIComponent(tweetText);
-		document.querySelector('.quote').innerText = quoteText;
-		document.querySelector('.author').innerText = 'Author: ' + quoteAuthor;
-		document.querySelector('.tweet').setAttribute('href', tweet);
+	if (tweetText.length > 140) {
+    	getQuote();
+	} else {
+    	var tweet = tweetLink + encodeURIComponent(tweetText);
+    	document.querySelector('.quote').innerText = quoteText;
+    	document.querySelector('.author').innerText = "Author: " + quoteAuthor;
+    	document.querySelector('.tweet').setAttribute('href', tweet);
 	}
 }
 
@@ -49,5 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelector('.trigger').addEventListener('click', function() {
         getQuote();
     });
+
+    /* Funkcja getQuote() uruchamia się już przy załadowaniu strony */
     getQuote();
 });
