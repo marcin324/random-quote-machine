@@ -1,41 +1,47 @@
 * {
-    box-sizing: border-box;
-    margin: 0 auto;
-    font-family: 'Open Sans', sans-serif;
-    text-align: center;
+	box-sizing: border-box;
+	margin: 0 auto;
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
 }
 
 body {
 	background: #55ACEE;
-    color: #fff;
-    border: 10px solid #fff;
-    height: 100vh;
+	color: #fff;
+	height: 100vh;
+
 	main {
 		height: 100%;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+
 		header {
 			line-height: 214px;
 			font-size: 3em;
 			flex: 1;
 		}
+
 		.quote-box {
 			font-size: 1.5em;
 			flex: 1;
 			display: flex;
 			flex-direction: column;
 			align-items: center;
+
 			.quote {
 				padding-top: 30px;
 				flex: 1;
 			}
+
 			.author {
 				flex: 2;
 			}
 		}
+
 		.button-box {
 			flex: 1;
+
 			.trigger {
 				margin-top: 50px;
 				display: block;
@@ -46,12 +52,14 @@ body {
 				cursor: pointer;
 				background: #55ACEE;
 				color: #fff;
+
 				&:hover {
 					background: #fff;
 					color: #55ACEE;
 					transition: .8s;
 				}
 			}
+
 			.tweet {
 				display: inline-block;
 				width: 400px;
@@ -61,6 +69,7 @@ body {
 				margin-top: 40px;
 				text-decoration: none;
 				color: #fff;
+
 				&:hover {
 					background: #fff;
 					color: #55ACEE;
