@@ -52,11 +52,11 @@ body {
 				cursor: pointer;
 				background: #55ACEE;
 				color: #fff;
+				transition: .3s;
 
 				&:hover {
 					background: #fff;
 					color: #55ACEE;
-					transition: .8s;
 				}
 			}
 
@@ -69,11 +69,11 @@ body {
 				margin-top: 40px;
 				text-decoration: none;
 				color: #fff;
+				transition: .3s;
 
 				&:hover {
 					background: #fff;
 					color: #55ACEE;
-					transition: .8s;
 				}
 			}
 		}

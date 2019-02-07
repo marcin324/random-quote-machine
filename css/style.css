@@ -66,12 +66,12 @@ body main .button-box .trigger {
   cursor: pointer;
   background: #55ACEE;
   color: #fff;
+  transition: .3s;
 }
 
 body main .button-box .trigger:hover {
   background: #fff;
   color: #55ACEE;
-  transition: .8s;
 }
 
 body main .button-box .tweet {
@@ -83,11 +83,11 @@ body main .button-box .tweet {
   margin-top: 40px;
   text-decoration: none;
   color: #fff;
+  transition: .3s;
 }
 
 body main .button-box .tweet:hover {
   background: #fff;
   color: #55ACEE;
-  transition: .8s;
 }
 /*# sourceMappingURL=style.css.map */
